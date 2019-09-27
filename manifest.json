@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "adSkipper",
+  "version": "1.0",
+
+  "description": "skips skipable youtube ads automatically",
+
+  "icons": {
+    "48": "icons/icon_48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/watch?*"],
+      "js": ["adSkipper.js"]
+    }
+  ]
+
+}
